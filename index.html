@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شحن الألعاب</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #121212; /* خلفية سوداء */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      direction: rtl;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+      padding: 20px;
+      background: #1e1e1e; /* خلفية غامقة */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #f5f5f5;
+      margin-bottom: 20px;
+    }
+
+    .game-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .game {
+      padding: 15px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: #282828;
+      text-align: center;
+    }
+
+    .game img {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .game h2 {
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 10px;
+    }
+
+    .top-up-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .top-up-option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      background-color: #FFB300; /* لون العنبر */
+      color: #121212;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .top-up-option:hover {
+      background-color: #FFA000; /* لون العنبر الداكن عند التمرير */
+    }
+
+    /* تنسيق بطاقات Visa Redotpay */
+    .card-container {
+      margin-top: 20px;
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-container h2 {
+      color: #FFB300; /* لون العنبر */
+      margin-bottom: 10px;
+    }
+
+    .card-container img {
+      width: 100%; /* عرض كامل */
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .card-container p {
+      color: #cccccc;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>شحن الألعاب</h1>
+    <div class="game-list">
+      <!-- PUBG Mobile -->
+      <div class="game">
+        <img src="pubg.jpg" alt="Pubg Mobile">
+        <h2>Pubg Mobile</h2>
+        <div class="top-up-options">
+          <div class="top-up-option">
+            <span>60 UC</span>
+            <span>300 دج / $3</span>
+          </div>
+          <div class="top-up-option">
+            <span>325 UC</span>
+            <span>1500 دج / $15</span>
+          </div>
+          <div class="top-up-option">
+            <span>660 UC</span>
+            <span>3000 دج / $30</span>
+          </div>
+          <div class="top-up-option">
+            <span>1800 UC</span>
+            <span>7500 دج / $75</span>
+          </div>
+          <div class="top-up-option">
+            <span>3850 UC</span>
+            <span>15000 دج / $150</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Free Fire -->
+      <div class="game">
+        <img src="freefire.jpg" alt="Free Fire">
+        <h2>Free Fire</h2>
+        <div class="top-up-options">
+          <div class="top-up-option">
+            <span>100 Diamonds</span>
+            <span>250 دج / $2.5</span>
+          </div>
+          <div class="top-up-option">
+            <span>310 Diamonds</span>
+            <span>750 دج / $7.5</span>
+          </div>
+          <div class="top-up-option">
+            <span>520 Diamonds</span>
+            <span>1250 دج / $12.5</span>
+          </div>
+          <div class="top-up-option">
+            <span>1060 Diamonds</span>
+            <span>2500 دج / $25</span>
+          </div>
+          <div class="top-up-option">
+            <span>2180 Diamonds</span>
+            <span>5000 دج / $50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- eFootball -->
+      <div class="game">
+        <img src="efootball.jpg" alt="eFootball">
+        <h2>eFootball</h2>
+        <div class="top-up-options">
+          <div class="top-up-option">
+            <span>500 Coins</span>
+            <span>500 دج / $5</span>
+          </div>
+          <div class="top-up-option">
+            <span>1050 Coins</span>
+            <span>1000 دج / $10</span>
+          </div>
+          <div class="top-up-option">
+            <span>2150 Coins</span>
+            <span>2000 دج / $20</span>
+          </div>
+          <div class="top-up-option">
+            <span>3300 Coins</span>
+            <span>3000 دج / $30</span>
+          </div>
+          <div class="top-up-option">
+            <span>6600 Coins</span>
+            <span>6000 دج / $60</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Genshin Impact -->
+      <div class="game">
+        <img src="genshin.jpg" alt="Genshin Impact">
+        <h2>Genshin Impact</h2>
+        <div class="top-up-options">
+          <div class="top-up-option">
+            <span>300 Crystals</span>
+            <span>600 دج / $6</span>
+          </div>
+          <div class="top-up-option">
+            <span>980 Crystals</span>
+            <span>1900 دج / $19</span>
+          </div>
+          <div class="top-up-option">
+            <span>1980 Crystals</span>
+            <span>3800 دج / $38</span>
+          </div>
+          <div class="top-up-option">
+            <span>3280 Crystals</span>
+            <span>6300 دج / $63</span>
+          </div>
+          <div class="top-up-option">
+            <span>6480 Crystals</span>
+            <span>12500 دج / $125</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- بطاقات Visa Redotpay -->
+    <div class="card-container">
+      <h2>شراء بطاقة Visa Redotpay</h2>
+      <img src="landscape1.jpg" alt="صورة بطاقة Visa Redotpay">
+      <p>هذا نص تجريبي لشرح بسيط حول بطاقة Visa Redotpay، يمكن تعديل هذا النص بسهولة ليشمل أي معلومات إضافية ترغب بها.</p>
+    </div>
+
+    <div class="card-container">
+      <h2>شراء بطاقة Visa Redotpay</h2>
+      <img src="landscape2.jpg" alt="صورة بطاقة Visa Redotpay">
+      <p>هذا نص تجريبي لشرح بسيط حول بطاقة Visa Redotpay، يمكن تعديل هذا النص بسهولة ليشمل أي معلومات إضافية ترغب بها.</p>
+    </div>
+
+    <div class="card-container">
+      <h2>شراء بطاقة Visa Redotpay</h2>
+      <img src="landscape3.jpg" alt="صورة بطاقة Visa Redotpay">
+      <p>هذا نص تجريبي لشرح بسيط حول بطاقة Visa Redotpay، يمكن تعديل هذا النص بسهولة ليشمل أي معلومات إضافية ترغب بها.</p>
+    </div>
+  </div>
+</body>
+</html>
