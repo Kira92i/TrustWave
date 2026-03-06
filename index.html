@@ -1,262 +1,286 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TrustWave Services</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      background-color: #121212; /* خلفية سوداء */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      direction: rtl;
-    }
+<title>Trustwave Services</title>
 
-    .container {
-      text-align: center;
-      max-width: 800px;
-      padding: 20px;
-      background: #1e1e1e; /* خلفية غامقة */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-    }
+<script src="https://cdn.tailwindcss.com"></script>
 
-    h1 {
-      color: #f5f5f5;
-      margin-bottom: 20px;
-    }
+<style>
 
-    .game-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
+:root{
+--primary:#25d366;
+--bg-dark:#0f172a;
+--card-bg:#1e293b;
+--accent:#FFB300;
+}
 
-    .game {
-      padding: 15px;
-      border: 1px solid #333;
-      border-radius: 5px;
-      background-color: #282828;
-      text-align: center;
-    }
+body{
+background:var(--bg-dark);
+color:#f8fafc;
+direction:rtl;
+font-family:Arial;
+}
 
-    .game img {
-      width: 80px;
-      height: 80px;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
+.btn{
+background:var(--primary);
+color:#000;
+font-weight:bold;
+font-size:16px;
+padding:12px 28px;
+}
 
-    .game h2 {
-      font-size: 18px;
-      color: #ddd;
-      margin-bottom: 10px;
-    }
+.card{
+background:var(--card-bg);
+border:1px solid #334155;
+transition:.3s;
+}
 
-    .top-up-options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.card:hover{
+border-color:var(--primary);
+transform:translateY(-5px);
+}
 
-    .top-up-option {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 8px;
-      background-color: #FFB300; /* لون العنبر */
-      color: #121212;
-      border-radius: 5px;
-      font-size: 16px;
-    }
+.glow-title{
+color:#fff;
+text-shadow:
+0 0 5px #25d366,
+0 0 10px #25d366,
+0 0 20px #25d366,
+0 0 40px #25d366;
+}
 
-    .top-up-option:hover {
-      background-color: #FFA000; /* لون العنبر الداكن عند التمرير */
-    }
+.price{
+display:flex;
+justify-content:space-between;
+background:var(--accent);
+color:#000;
+padding:6px 10px;
+border-radius:6px;
+margin-top:6px;
+font-size:14px;
+}
 
-    /* تنسيق بطاقات Visa Redotpay */
-    .card-container {
-      margin-top: 20px;
-      background: #1e1e1e;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+</style>
 
-    .card-container h2 {
-      color: #FFB300; /* لون العنبر */
-      margin-bottom: 10px;
-    }
-
-    .card-container img {
-      width: 100%; /* عرض كامل */
-      height: auto;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-
-    .card-container p {
-      color: #cccccc;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>شحن الألعاب</h1>
-    <div class="game-list">
-      <!-- PUBG Mobile -->
-      <div class="game">
-        <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L2.png" alt="Pubg Mobile">
-        <h2>Pubg Mobile</h2>
-        <div class="top-up-options">
-          <div class="top-up-option">
-            <span>60 UC</span>
-            <span>$0.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>300+25 UC</span>
-            <span>$4.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>600+60 UC</span>
-            <span>$9.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>1500+300 UC</span>
-            <span>$24.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>3000+850 UC</span>
-            <span>$49.99</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Free Fire -->
-      <div class="game">
-        <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L1.png" alt="Free Fire">
-        <h2>Free Fire</h2>
-        <div class="top-up-options">
-          <div class="top-up-option">
-            <span>100+100 Dmn</span>
-            <span>$0.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>310+310 Dmn</span>
-            <span>$2.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>520+520 Dmn</span>
-            <span>$4.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>1060+1060 Dmn</span>
-            <span>$9.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>2180+2180 Dmn</span>
-            <span>$19.99</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- eFootball -->
-      <div class="game">
-        <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L4.png" alt="eFootball">
-        <h2>eFootball</h2>
-        <div class="top-up-options">
-          <div class="top-up-option">
-            <span>130 Coins</span>
-            <span>$1.19</span>
-          </div>
-          <div class="top-up-option">
-            <span>300 Coins</span>
-            <span>$2.69</span>
-          </div>
-          <div class="top-up-option">
-            <span>550 Coins</span>
-            <span>$4.79</span>
-          </div>
-          <div class="top-up-option">
-            <span>750 Coins</span>
-            <span>$6.49</span>
-          </div>
-          <div class="top-up-option">
-            <span>1040 Coins</span>
-            <span>$8.79</span>
-          </div>
-          <div class="top-up-option">
-            <span>2130 Coins</span>
-            <span>$17.99</span>
-          </div>
-        </div>
-      </div>
+<!-- NAV -->
 
-      <!-- Genshin Impact -->
-      <div class="game">
-        <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L3.png" alt="Genshin Impact">
-        <h2>Genshin Impact</h2>
-        <div class="top-up-options">
-          <div class="top-up-option">
-            <span>60+60 Crystals</span>
-            <span>$0.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>300+300 Crystals</span>
-            <span>$4.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>980+980 Crystals</span>
-            <span>$14.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>1980+1990 Crystals</span>
-            <span>$29.99</span>
-          </div>
-          <div class="top-up-option">
-            <span>3280+3280 Crystals</span>
-            <span>$49.99</span>
-          </div>
-        </div>
-      </div>
-    </div>
+<nav class="sticky top-0 z-50 bg-slate-900 border-b border-slate-800">
 
-    <!-- بطاقات Visa Redotpay -->
-    <div class="card-container">
-      <h2>خدمة الشراء من موقع AliExpress</h2>
-      <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S1.jpg" alt="AliExpress">
-      <p>"نقدم لك خدمة الشراء من موقع AliExpress  بأفضل الأسعار و التوصيل يكون من 20 الى 30 يوم و الدفع عبر ccp و Baridimob 
+<div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+
+<div class="text-xl font-black glow-title">
+Trustwave Services
+</div>
+
+<a href="https://wa.me/qr/SWRUOYDR2XA6J1"
+target="_blank"
+class="btn rounded-full">
+اتصل بنا
+</a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="py-20 text-center px-6">
+
+<h1 class="text-5xl font-black mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+خدماتنا الإلكترونية
+</h1>
+
+<p class="text-gray-400">
+شحن ألعاب و خدمات رقمية بسرعة و أمان
 </p>
-    </div>
 
-    <div class="card-container">
-      <h2>طلب بطاقة Visa Redotpay</h2>
-      <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S2.jpg" alt="visa card">
-      <p>أحصل على بطاقتك الإفتراضية بسعر مميز و في مدة زمنية قصيرة ، تمتع بالحرية المالية مع هدية 5 دولار من الموقع</p>
-    </div>
+</header>
 
-    <div class="card-container">
-      <h2>طلب حساب جوجل بلاي أمريكي</h2>
-      <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S3.jpg" alt="google play">
-      <p>احصل على حساب جوجل بلاي الأمريكي مفعل النقاط  بسعر رمزي .</p>
-    </div>
 
-    <div class="card-container">
-      <h2>برمجة الملف الشخصي </h2>
-      <img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S4.jpg" alt="profile">
-      <p>اطلب صفحتك الخاصة التي تحتوي على روابط حساباتك على مواقع التواصل الاجتماعي ، اجعل التواصل معك أسهل من خلال رابط واحد فقط.</p>
-    </div>
-  </div>
+<!-- SERVICES -->
+
+<section class="max-w-6xl mx-auto px-6 pb-24 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+<!-- PUBG -->
+
+<div class="card rounded-xl overflow-hidden p-6">
+
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L2.png" class="w-20 mx-auto mb-4">
+
+<h3 class="text-xl font-bold text-center mb-4">
+PUBG Mobile
+</h3>
+
+<div class="price"><span>60 UC</span><span>$0.99</span></div>
+<div class="price"><span>300+25 UC</span><span>$4.99</span></div>
+<div class="price"><span>600+60 UC</span><span>$9.99</span></div>
+<div class="price"><span>1500+300 UC</span><span>$24.99</span></div>
+<div class="price"><span>3000+850 UC</span><span>$49.99</span></div>
+
+</div>
+
+
+<!-- FREE FIRE -->
+
+<div class="card rounded-xl overflow-hidden p-6">
+
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L1.png" class="w-20 mx-auto mb-4">
+
+<h3 class="text-xl font-bold text-center mb-4">
+Free Fire
+</h3>
+
+<div class="price"><span>100+100 Dmn</span><span>$0.99</span></div>
+<div class="price"><span>310+310 Dmn</span><span>$2.99</span></div>
+<div class="price"><span>520+520 Dmn</span><span>$4.99</span></div>
+<div class="price"><span>1060+1060 Dmn</span><span>$9.99</span></div>
+<div class="price"><span>2180+2180 Dmn</span><span>$19.99</span></div>
+
+</div>
+
+
+<!-- EFOOTBALL -->
+
+<div class="card rounded-xl overflow-hidden p-6">
+
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L4.png" class="w-20 mx-auto mb-4">
+
+<h3 class="text-xl font-bold text-center mb-4">
+eFootball
+</h3>
+
+<div class="price"><span>130 Coins</span><span>$1.19</span></div>
+<div class="price"><span>300 Coins</span><span>$2.69</span></div>
+<div class="price"><span>550 Coins</span><span>$4.79</span></div>
+<div class="price"><span>750 Coins</span><span>$6.49</span></div>
+<div class="price"><span>1040 Coins</span><span>$8.79</span></div>
+<div class="price"><span>2130 Coins</span><span>$17.99</span></div>
+
+</div>
+
+
+<!-- GENSHIN -->
+
+<div class="card rounded-xl overflow-hidden p-6">
+
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/L3.png" class="w-20 mx-auto mb-4">
+
+<h3 class="text-xl font-bold text-center mb-4">
+Genshin Impact
+</h3>
+
+<div class="price"><span>60+60</span><span>$0.99</span></div>
+<div class="price"><span>300+300</span><span>$4.99</span></div>
+<div class="price"><span>980+980</span><span>$14.99</span></div>
+<div class="price"><span>1980+1990</span><span>$29.99</span></div>
+<div class="price"><span>3280+3280</span><span>$49.99</span></div>
+
+</div>
+
+
+<!-- ALIEXPRESS -->
+
+<div class="card rounded-xl overflow-hidden">
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S1.jpg">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">الشراء من AliExpress</h3>
+<p class="text-gray-400 text-sm">
+شراء المنتجات و التوصيل بين 20 و 30 يوم.
+</p>
+</div>
+</div>
+
+
+<!-- VISA -->
+
+<div class="card rounded-xl overflow-hidden">
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S2.jpg">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">بطاقة Visa Redotpay</h3>
+<p class="text-gray-400 text-sm">
+بطاقة فيزا افتراضية مع هدية 5 دولار.
+</p>
+</div>
+</div>
+
+
+<!-- GOOGLE PLAY -->
+
+<div class="card rounded-xl overflow-hidden">
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S3.jpg">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Google Play أمريكي</h3>
+<p class="text-gray-400 text-sm">
+حساب Google Play أمريكي مفعل النقاط.
+</p>
+</div>
+</div>
+
+
+<!-- PROFILE PAGE -->
+
+<div class="card rounded-xl overflow-hidden">
+<img src="https://raw.githubusercontent.com/Kira92i/TrustWave/refs/heads/main/S4.jpg">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">برمجة صفحتك الخاصة</h3>
+<p class="text-gray-400 text-sm">
+صفحة تجمع روابطك في رابط واحد.
+</p>
+</div>
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="max-w-4xl mx-auto px-6 pb-24">
+
+<h2 class="text-3xl font-bold mb-10 text-center">
+الأسئلة الشائعة
+</h2>
+
+<div class="space-y-6">
+
+<div class="card p-6 rounded-xl">
+<h3 class="font-bold mb-2">كم مدة وصول المنتج ؟</h3>
+<p class="text-gray-400 text-sm">
+شحن الألعاب يتم غالباً خلال دقائق.  
+أما الطلبات من المواقع مثل AliExpress فقد تستغرق من 20 إلى 30 يوم حسب الشحن.
+</p>
+</div>
+
+<div class="card p-6 rounded-xl">
+<h3 class="font-bold mb-2">هل سعر الدولار ثابت ؟</h3>
+<p class="text-gray-400 text-sm">
+سعر الدولار متغير حسب السوق لذلك قد تتغير الأسعار.
+</p>
+</div>
+
+<div class="card p-6 rounded-xl">
+<h3 class="font-bold mb-2">كيف يتم الدفع ؟</h3>
+<p class="text-gray-400 text-sm">
+الدفع يكون مسبقاً عبر CCP أو Baridimob.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="text-center pb-10 text-gray-500 text-sm">
+All rights reserved for KIRA © 2024
+</footer>
+
 </body>
 </html>
